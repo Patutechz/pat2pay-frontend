@@ -54,7 +54,7 @@ const Profile = () => {
     fetch(`${BASE}/api/user/profile`, {
       headers: { Authorization: `Bearer ${user.token}` },
     })
-      .then((r) => r.ok && r.json().then(setProfile))
+      .then((r) =>  r.json().then(setProfile))
       .finally(() => setLoading(false));
   }, [user]);
 

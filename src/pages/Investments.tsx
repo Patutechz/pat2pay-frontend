@@ -50,7 +50,7 @@ const Investments = () => {
       headers: { Authorization: `Bearer ${user.token}` },
     }).then(
       (r) =>
-        r.ok &&
+        // r.ok &&
         r.json().then((d) => dispatch({ type: "SET_INVESTMENTS", payload: d })),
     );
   }, [user, dispatch]);

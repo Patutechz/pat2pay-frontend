@@ -52,7 +52,7 @@ const Cards = () => {
     if (!user) return;
     fetch(`${BASE}/api/cards`, { headers }).then(
       (r) =>
-        r.ok &&
+        // r.ok &&
         r.json().then((d) => dispatch({ type: "SET_CARDS", payload: d })),
     );
   }, [user]);

@@ -69,7 +69,7 @@ const Home = () => {
     const headers = { Authorization: `Bearer ${user.token}` };
     fetch(`${BASE}/api/wallet`, { headers }).then(
       (r) =>
-        r.ok &&
+        // r.ok &&
         r
           .json()
           .then((d) => walletDispatch({ type: "SET_WALLET", payload: d })),

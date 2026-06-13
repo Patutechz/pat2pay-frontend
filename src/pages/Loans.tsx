@@ -67,7 +67,7 @@ const Loans = () => {
     if (!user) return;
     fetch(`${BASE}/api/loans`, { headers }).then(
       (r) =>
-        r.ok &&
+        // r.ok &&
         r.json().then((d) => dispatch({ type: "SET_LOANS", payload: d })),
     );
   }, [user]);
