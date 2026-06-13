@@ -16,7 +16,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 import ProfilePic from "../assets/img/avatar.png";
 import type { UserProfileDto } from "../types";
 
-const BASE = "http://localhost:5145";
+const BASE = "https://pat2pay.azurewebsites.net/";
 const fmt = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(
     n,

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 import type { NewUserDto } from "../types";
 
-const BASE = "http://localhost:5145";
+const BASE = "https://pat2pay.azurewebsites.net/";
 
 export const useLogin = () => {
   const [error, setError] = useState<string | null>(null);

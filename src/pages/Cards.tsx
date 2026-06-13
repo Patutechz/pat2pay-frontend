@@ -25,7 +25,7 @@ import { useAuthContext } from "../hooks/useAuthContext";
 import { useCardContext } from "../hooks/useCardContext";
 import DashboardLayout from "../layouts/DashboardLayout";
 
-const BASE = "http://localhost:5145";
+const BASE = "https://pat2pay.azurewebsites.net/";
 const fmt = (n: number) =>
   new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(
     n,
